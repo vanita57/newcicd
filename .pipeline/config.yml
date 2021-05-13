@@ -1,0 +1,12 @@
+@Library('piper-lib-os')
+import org.jenkinsci.plugins.workflow.steps.MissingContextVariableException
+
+def nodeAvailable() {
+    try {
+        sh "echo 'Node is available!'"
+    } catch (MissingContextVariableException e) {
+        echo "No node context available."
+        return false
+    }
+    return true
+}
