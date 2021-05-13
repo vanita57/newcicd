@@ -2,10 +2,11 @@
 node() {
     stage('prepare') {
         checkout scm
+        customDefaultsCredentialsId :no
         setupCommonPipelineEnvironment script:this
+        
     }
     stage('deploy') {
-    customDefaultsCredentialsId :no
     cloudFoundryDeploy script: this
 }
 }
