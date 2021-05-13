@@ -2,7 +2,7 @@
 node() {
     stage('prepare') {
         checkout scm
-        customDefaultsCredentialsId :no
+        customDefaultsCredentialsId :none
         setupCommonPipelineEnvironment script:this
         
     }
