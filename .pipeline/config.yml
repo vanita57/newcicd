@@ -13,7 +13,6 @@ steps:
   mtaBuild:
     buildTarget: 'CF'
   cloudFoundryDeploy:
-    deployTool: 'mtaDeployPlugin'
     cloudFoundry:
       credentialsId: 'CF_CREDENTIALSID'
       apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
