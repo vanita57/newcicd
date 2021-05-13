@@ -9,6 +9,8 @@
 #       org: '2f317a0ftrial'
 #       space: 'dev'
 #       credentialsId: 'CF_CREDENTIALSID'
+general:
+  verbose:true
 steps:
   mtaBuild:
     buildTarget: 'CF'
