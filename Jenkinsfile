@@ -5,6 +5,7 @@ node() {
         setupCommonPipelineEnvironment script:this
     }
     stage('deploy') {
+    customDefaultsCredentialsId :no
     cloudFoundryDeploy script: this
 }
 }
