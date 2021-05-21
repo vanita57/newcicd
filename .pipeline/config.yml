@@ -1,7 +1,7 @@
+# Project configuration
 general:
-  buildTool: 'mta'
-
-
+  pipeline: 'sap-cloud-sdk'    # this line is mandatory
+  buildTool: 'mta'             # or 'npm' 
 # general:
 # steps:
 #   mtaBuild:
