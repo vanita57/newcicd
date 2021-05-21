@@ -1,6 +1,6 @@
 @Library('piper-lib-os') _
 
-buildExecute script:this, buildTool: 'mta'
+buildExecute script:this
 
 cloudFoundryDeploy(
     script: this ,
