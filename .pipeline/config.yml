@@ -1,5 +1,5 @@
 general:
-  buildTool: 'mta'
+  buildTool: 'npm'
 
 
 
