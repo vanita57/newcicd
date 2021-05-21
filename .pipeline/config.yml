@@ -1,3 +1,9 @@
+general:
+  buildTool: 'npm'
+
+
+
+
 # general:
 # steps:
 #   mtaBuild:
@@ -9,16 +15,16 @@
 #       org: '2f317a0ftrial'
 #       space: 'dev'
 #       credentialsId: 'CF_CREDENTIALSID'
-general:
-  verbose:true
-steps:
-  mtaBuild:
-    buildTarget: 'CF'
-cloudFoundryDeploy:
-    deployTool: 'mtaDeployPlugin'
-    deployType: 'standard'
-    cloudFoundry:
-      credentialsId: 'CF_CREDENTIALSID'
-      apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
-      org: '2f317a0ftrial'
-      space: 'dev'
+# general:
+#   verbose:true
+# steps:
+#   mtaBuild:
+#     buildTarget: 'CF'
+# cloudFoundryDeploy:
+#     deployTool: 'mtaDeployPlugin'
+#     deployType: 'standard'
+#     cloudFoundry:
+#       credentialsId: 'CF_CREDENTIALSID'
+#       apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
+#       org: '2f317a0ftrial'
+#       space: 'dev'
