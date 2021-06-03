@@ -8,7 +8,7 @@ cloudFoundryCreateService(
     cfService :  'connectivity',
     cfServiceInstanceName : 'BusinessPartnerValidation-cs',
     cfServicePlan : 'lite',
-    cfCreateServiceConfig : '{\"example\":\"value\",\"example\":\"value\"}',
-    cfServiceTags : 'list, of, tags',
+   // cfCreateServiceConfig : '{\"example\":\"value\",\"example\":\"value\"}',
+   // cfServiceTags : 'list, of, tags',
     script : this,
 )
