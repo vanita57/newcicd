@@ -1,5 +1,5 @@
 library('piper-lib-os')
-
+node (){
 cloudFoundryCreateService(
     cfApiEndpoint : 'https://api.cf.eu10.hana.ondemand.com',
     cfOrg : '2f317a0ftrial',
@@ -12,3 +12,4 @@ cloudFoundryCreateService(
    // cfServiceTags : 'list, of, tags',
     script : this,
 )
+}
