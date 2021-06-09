@@ -3,21 +3,12 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('cloudFoundryCreateService') {
             steps {
-                echo 'Building..'
+                echo 'cloudFoundryCreateService..'
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
+        
     }
 }
 // node (){
