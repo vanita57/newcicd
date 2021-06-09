@@ -1,14 +1,12 @@
 library('piper-lib-os')
 pipeline {
-    agent any
-
-    stages {
-        stage('cloudFoundryCreateService') {
-            steps {
-                echo 'cloudFoundryCreateService..start'
-                cloudFoundryCreateService script: this
-            }
+    node {
+    stage('Example') {
+        if (env.BRANCH_NAME == 'master') {
+            echo 'I only execute on the master branch'
+        } else {
+            echo 'I execute elsewhere'
         }
-        
     }
+}
 }
